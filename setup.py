@@ -10,6 +10,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "frappe>=15.0.0,<16.0.0"
+        "frappe>=15.0.0 <16.0.0"
     ]
 )
