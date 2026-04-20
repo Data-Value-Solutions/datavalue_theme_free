@@ -1,41 +1,34 @@
-### Datavalue Theme Free
+## Data value Theme <small style="color:green">(Free)</small>
 
 DataValue Theme is a modern and customizable UI theme for Frappe and ERPNext. It improves the overall user experience and workflow efficiency while keeping the core framework intact and fully upgrade-safe.
 
-### Installation
+- Company: [Data Value Solutions](https://www.datavalue.solutions)
+- By: [Abdo Hamoud](https://github.com/abdo-host)
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
-
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app datavalue_theme_free
-```
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+---
 
 ```bash
-cd apps/datavalue_theme_free
-pre-commit install
+bench get-app https://github.com/Data-Value-Solutions/datavalue_theme_free.git
+```
+```bash
+bench --site <site_name> install-app datavalue_theme_15
 ```
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+```bash
+bench --site <site_name> migrate
+```
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+```bash
+bench build --app datavalue_theme_15
+```
 
-### CI
+```bash
+bench restart
+```
 
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
+---
 ### License
 
-mit
+MIT
+
+> ⚠️ **Note:** This theme is free for personal and commercial use, but **reselling, redistributing, or repackaging it as a paid product is strictly prohibited**.

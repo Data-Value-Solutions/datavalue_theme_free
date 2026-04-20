@@ -11,8 +11,8 @@ async function runThemeSettings() {
 frappe.ui.form.on('Theme Settings', {
     setup() {
         let assets = [
-            // '/assets/datavalue_theme_15/plugins/bootstrap-select/bootstrap-select.min.js',
-            // '/assets/datavalue_theme_15/js/datavalue_theme.settings.min.js'
+            // '/assets/datavalue_theme_free/plugins/bootstrap-select/bootstrap-select.min.js',
+            // '/assets/datavalue_theme_free/js/datavalue_theme.settings.min.js'
             // 'datavalue_theme.settings.bundle.js'
         ];
         frappe.require(assets, () => {
