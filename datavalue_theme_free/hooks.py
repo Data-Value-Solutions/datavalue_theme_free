@@ -1,5 +1,8 @@
+from . import __version__ as version
+
+app_version = version
 app_name = "datavalue_theme_free"
-app_title = "Datavalue Theme Free"
+app_title = "Data Value Theme Free"
 app_publisher = "Abdo Hamoud"
 app_description = "DataValue Theme is a modern and customizable UI theme for Frappe and ERPNext. It improves the overall user experience and workflow efficiency while keeping the core framework intact and fully upgrade-safe."
 app_email = "abdo.host@gmail.com"
@@ -9,6 +12,11 @@ app_license = "mit"
 # ------------------
 
 # required_apps = []
+
+website_context = {
+    "favicon": "/assets/datavalue_theme_free/images/datavlue-new-icon-xs.png",
+    "splash_image": "/assets/datavalue_theme_free/images/theme_splash_empty.jpg"
+}
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -23,6 +31,41 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+
+app_include_css = [
+    "/assets/datavalue_theme_free/plugins/animate.css/animate.min.css",
+    "/assets/datavalue_theme_free/plugins/fontawesome/all.min.css",
+    "/assets/datavalue_theme_free/plugins/tooltip/tooltip-theme-twipsy.css",
+    "/assets/datavalue_theme_free/plugins/flat-icons/flaticon.css",
+    "/assets/datavalue_theme_free/plugins/simple-calendar/simple-calendar.css",
+    "datavalue_theme_free.bundle.css"
+]
+
+app_include_js = [
+    "/assets/datavalue_theme_free/plugins/lodash/lodash.min.js",
+    "/assets/datavalue_theme_free/plugins/vue/vue.js",
+    "/assets/datavalue_theme_free/plugins/bootstrap4c-chosen/chosen.min.js",
+    "/assets/datavalue_theme_free/plugins/nicescroll/nicescroll.js",
+    "/assets/datavalue_theme_free/plugins/tooltip/tooltip.js",
+    "/assets/datavalue_theme_free/plugins/jquery-fullscreen/jquery.fullscreen.min.js",
+    "/assets/datavalue_theme_free/plugins/simple-calendar/jquery.simple-calendar.js",
+    "/assets/datavalue_theme_free/js/datavalue_theme_free.app.min.js?ver="+app_version
+    # "datavalue_theme_free.bundle.js"
+]
+
+email_brand_image = "assets/datavalue_theme_free/images/logo-v.png"
+
+# include js, css files in header of web template
+web_include_css = [
+    "assets/datavalue_theme_free/plugins/fontawesome/all.min.css",
+    "assets/datavalue_theme_free/css/login.css",
+    "assets/datavalue_theme_free/css/dv-login.css?ver=" + app_version,
+    "datavalue_theme_free.web.bundle.css"
+]
+web_include_js = [
+    "/assets/datavalue_theme_free/js/datavalue_theme_free.web.min.js?ver=" + app_version
+]
+
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/datavalue_theme_free/css/datavalue_theme_free.css"

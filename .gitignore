@@ -4,4 +4,14 @@
 *.swp
 tags
 node_modules
+datavalue_theme_free/public/node_modules
+datavalue_theme_free/public/dist
+datavalue_theme_free/public/js/vue
+datavalue_theme_free/public/js/frappe
+datavalue_theme_free/public/js/datavalue_theme_free.js
+datavalue_theme_free/public/js/datavalue_theme_free.bundle.js
+datavalue_theme_free/public/js/datavalue_theme_free.settings.bundle.js
+datavalue_theme_free/public/js/datavalue_theme_free_web.bundle.js
+datavalue_theme_free/public/js/datavalue_theme_free_login.bundle.js
+datavalue_theme_free/public/js/output.js
 __pycache__
