@@ -6,7 +6,7 @@ authors = [
 description = "DataValue Theme is a modern and customizable UI theme for Frappe and ERPNext. It improves the overall user experience and workflow efficiency while keeping the core framework intact and fully upgrade-safe."
 requires-python = ">=3.10"
 readme = "README.md"
-dynamic = ["version"]
+dynamic = "1.0.0"
 dependencies = [
    "frappe>=15.0.0,<16.0.0"
 ]
