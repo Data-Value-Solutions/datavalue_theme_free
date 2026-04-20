@@ -11,7 +11,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = [["frappe", ">=15.0.0 <16.0.0"]]
 
 website_context = {
     "favicon": "/assets/datavalue_theme_free/images/datavlue-new-icon-xs.png",
